@@ -1,8 +1,10 @@
-const canvas = document.getElementById('canvas1')
-const ctx = canvas.getContext('2d')
+const canvas = document.getElementById('canvas1');
+const ctx = canvas.getContext('2d');
 canvas.width = 500;
 canvas.height = 700;
 const explosyions = [];
+let canvasPosition = canvas.getBoundingClientRect();
+
 
 class Explosion {
     constructor(x,y){
@@ -29,6 +31,6 @@ class Explosion {
 
 window.addEventListener('click', function(e){
     console.log(e);
-    ctx.fillStyle = 'white'
-    ctx.fillRect(e.x, e.y, x, y, width, height)
+    ctx.fillStyle = 'white';
+    ctx.fillRect(e.x - canvasPosition.left - 25, e.y  - canvasPosition.top - 25, 50, 50);
 });
