@@ -1,6 +1,6 @@
 # Animation-on-trigger
 
-![Screen].(https://github.com/thomasanders/Animation-on-trigger/blob/main/Animation-explosions.gif)
+![Screen](https://github.com/thomasanders/Animation-on-trigger/blob/main/Animation-explosions.gif)
 
 
 JavaScript implementation of explosions on click.
